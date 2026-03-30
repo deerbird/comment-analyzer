@@ -440,8 +440,8 @@ with st.sidebar:
     max_workers = st.slider(
         "并发处理数",
         min_value=1,
-        max_value=5,  # 云端限制低一些，避免超时
-        value=3,
+        max_value=15,  # 云端限制低一些，避免超时
+        value=10,
         help="同时处理的图片数量"
     )
     
