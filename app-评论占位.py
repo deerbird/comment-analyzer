@@ -34,13 +34,13 @@ DEFAULT_NEGATIVE_KEYWORDS = [
 try:
     # 云端部署时使用secrets
     API_KEY = st.secrets["API_KEY"]
-    BASE_URL = st.secrets.get("BASE_URL", "https://api.camel-hub.com/v1")
-    MODEL = st.secrets.get("MODEL", "doubao-seed-2-0-lite-260215")
+    BASE_URL = st.secrets.get("BASE_URL", "https://ark.cn-beijing.volces.com/api/v3")
+    MODEL = st.secrets.get("MODEL", "doubao-seed-2-0-lite-260428")
 except:
     # 本地测试时使用默认值
-    API_KEY = "sk-LMO7XizuqIjwIqq8KHh6PIcCuLCD6YlOwrViCB3wWKU4ofkF"
-    BASE_URL = "https://api.camel-hub.com/v1"
-    MODEL = "doubao-seed-2-0-lite-260215"
+    API_KEY = "ark-5bb34a29-54c7-4df2-9721-af419e1fc93e-2d443"
+    BASE_URL = "https://ark.cn-beijing.volces.com/api/v3"
+    MODEL = "doubao-seed-2-0-lite-260428"
 
 
 class WPSImageExtractor:
