@@ -34,12 +34,12 @@ DEFAULT_NEGATIVE_KEYWORDS = [
 try:
     # 云端部署时使用secrets
     API_KEY = st.secrets["API_KEY"]
-    BASE_URL = st.secrets.get("BASE_URL", "https://api.camel-hub.com/")
+    BASE_URL = st.secrets.get("BASE_URL", "https://api.camel-hub.com/v1")
     MODEL = st.secrets.get("MODEL", "doubao-seed-2-0-lite-260215")
 except:
     # 本地测试时使用默认值
     API_KEY = "sk-LMO7XizuqIjwIqq8KHh6PIcCuLCD6YlOwrViCB3wWKU4ofkF"
-    BASE_URL = "https://api.camel-hub.com/"
+    BASE_URL = "https://api.camel-hub.com/v1"
     MODEL = "doubao-seed-2-0-lite-260215"
 
 
