@@ -34,13 +34,13 @@ DEFAULT_NEGATIVE_KEYWORDS = [
 try:
     # 云端部署时使用secrets
     API_KEY = st.secrets["API_KEY"]
-    BASE_URL = st.secrets.get("BASE_URL", "https://www.sophnet.com/api/open-apis/v1")
-    MODEL = st.secrets.get("MODEL", "qwen3.6-flash")
+    BASE_URL = st.secrets.get("BASE_URL", "https://ark.cn-beijing.volces.com/api/v3")
+    MODEL = st.secrets.get("MODEL", "doubao-seed-2-0-lite-260428")
 except:
     # 本地测试时使用默认值
-    API_KEY = "u6Ow4Rc3S7XU4oSGBxhFjR1sFeSZMf_Jd_UQ2JTdhqx3FhdjSSF8I2vHgrztkru3CXCaWu3Yb_65TmHsqX4RVg"
-    BASE_URL = "https://www.sophnet.com/api/open-apis/v1"
-    MODEL = "qwen3.6-flash"
+    API_KEY = "ark-6217bc57-7f6d-40db-9e55-0ab6a74011ed-26f0d"
+    BASE_URL = "https://ark.cn-beijing.volces.com/api/v3"
+    MODEL = "doubao-seed-2-0-lite-260428"
 
 
 class WPSImageExtractor:
